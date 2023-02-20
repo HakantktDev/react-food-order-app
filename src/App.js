@@ -16,6 +16,7 @@ function App() {
   };
 
   return (
+    // contextApi is not a global state and it is just an exapmle it is not a good usage for contextApi
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
