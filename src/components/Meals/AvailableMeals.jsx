@@ -7,6 +7,7 @@ const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState(null);
+
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch('https://react-http-1c3b2-default-rtdb.firebaseio.com/meals.json');
